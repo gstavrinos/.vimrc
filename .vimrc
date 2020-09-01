@@ -34,8 +34,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer' }
 Plug 'Yggdroot/indentLine'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 " ---
