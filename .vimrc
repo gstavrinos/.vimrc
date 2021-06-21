@@ -41,6 +41,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/syntastic'
+Plug 'dense-analysis/ale'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
 " ---
@@ -91,5 +93,9 @@ set background=dark
 let g:gruvbox_material_background = 'hard'
 colorscheme gruvbox-material
 let g:airline_theme = 'gruvbox_material'
+" ---
+
+" Rainbow
+let g:rainbow_active = 1
 " ---
 
