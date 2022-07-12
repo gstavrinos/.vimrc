@@ -102,4 +102,6 @@ let g:rainbow_active = 1
 " Extra, no plugin dependent
 au BufNewFile,BufRead *.xacro set filetype=xml
 au BufNewFile,BufRead *.urdf set filetype=xml
+au BufNewFile,BufRead *.world set filetype=xml
+au BufNewFile,BufRead *.sdf set filetype=xml
 " ---
