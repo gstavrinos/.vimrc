@@ -9,6 +9,10 @@ filetype plugin on
 set autoindent
 " ---
 
+" Required by vimwiki
+set nocompatible
+syntax on
+
 " Leader
 let mapleader="\<Space>"
 " ---
@@ -43,6 +47,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/syntastic'
 Plug 'dense-analysis/ale'
 Plug 'luochen1990/rainbow'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 " ---
@@ -99,9 +105,14 @@ let g:airline_theme = 'gruvbox_material'
 let g:rainbow_active = 1
 " ---
 
+" vimwiki
+let g:vimwiki_list = [{"path": "~/gst-vimwiki", "path_html": "~/gst-vimwiki/html"}]
+" ---
+
 " Extra, no plugin dependent
 au BufNewFile,BufRead *.xacro set filetype=xml
 au BufNewFile,BufRead *.urdf set filetype=xml
 au BufNewFile,BufRead *.world set filetype=xml
 au BufNewFile,BufRead *.sdf set filetype=xml
+au BufNewFile,BufRead *.cfg set filetype=python
 " ---
